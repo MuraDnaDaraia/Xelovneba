@@ -1,0 +1,17 @@
+@mixin bg{
+    background: #5A3F37;
+    background: -webkit-linear-gradient(to top, #2C7744, #5A3F37);
+    background: linear-gradient(to top, #2C7744, #5A3F37); 
+    }
+    @mixin goFlex($dir: row, $justify: flex-start, $align: stretch, $wrap: wrap) {
+        display: flex;
+        flex-direction: $dir;
+        justify-content: $justify;
+        align-items: $align;
+        flex-wrap: $wrap;
+    }
+    @mixin child-image($size: cover, $position: center) {
+        background-size: $size;
+        background-position: $position;
+        background-repeat: no-repeat;
+    }

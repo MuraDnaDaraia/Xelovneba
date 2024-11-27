@@ -1,0 +1,80 @@
+body {
+  background: #5A3F37;
+  background: linear-gradient(to top, #2C7744, #5A3F37);
+  z-index: 0;
+  width: 100vw;
+  height: 1400px;
+  color: wheat !important;
+}
+body .Content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  max-width: 1400px;
+  max-height: 1400px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .Content nav {
+  width: 100% !important;
+  background: #5A3F37;
+  background: linear-gradient(to top, #2C7744, #5A3F37);
+  border-radius: 6px;
+}
+body .Content nav a {
+  color: azure !important;
+  border: 2px solid wheat;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Smooth animation */
+}
+body .Content nav a:hover {
+  transform: scale(1.2); /* Scale up by 20% */
+}
+body .Content nav a:hover:active {
+  background-color: #8a6d6d;
+}
+body .Content .largediv {
+  display: flex;
+  flex-direction: space-between;
+  justify-content: wrap;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+body .Content .largediv .photos {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 50%;
+}
+body .Content .largediv .photos :first-child {
+  background-image: url(../imgs/3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 350px;
+  margin-top: 30px !important;
+}
+body .Content .largediv .photos :last-child {
+  background-image: url(../imgs/2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 350px;
+  margin-top: 10px;
+}
+body .Content .largediv .largetxt {
+  width: 50%;
+}/*# sourceMappingURL=bio.css.map */

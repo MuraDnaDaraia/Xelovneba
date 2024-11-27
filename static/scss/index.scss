@@ -1,0 +1,59 @@
+@import '_mixins';
+body{
+    @include bg();
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    .Content {
+        position: relative;
+        z-index: 1;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0.5rem;
+        max-width: 1400px;
+        margin: 2rem auto;
+        @include goFlex(column, center, center, wrap);
+        nav{
+            width: 100% !important;
+            @include bg();
+            border-radius: 6px;
+
+            a{
+                color: azure !important;
+                border: 2px solid wheat;
+                padding: 2px;
+                margin: 2px;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: transform 0.2s ease; /* Smooth animation */
+                
+            &:hover {
+                transform: scale(1.2); /* Scale up by 20% */
+                &:active {
+                background-color: #8a6d6d;
+                }
+            }
+        }
+        
+        
+    }
+    .pirosmani{
+        color: wheat;
+    }   
+    .info{
+        @include goFlex(stretch, space-around, wrap);
+    }
+            .img{
+            background-image: url(../imgs/1.jpg);
+            @include child-image();
+            width: 300px;
+            height: 400px;
+            }
+            .txt{
+                color: whitesmoke;
+                width: 50%;
+                font-size: 1.5rem;
+            }
+    
+}
+}

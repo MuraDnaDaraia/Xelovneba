@@ -1,0 +1,72 @@
+@import '_mixins';
+body{
+    @include bg();
+    z-index: 0;
+    width: 100vw;
+    height: 1400px;
+    color: wheat !important;
+    .Content {
+        position: relative;
+        z-index: 1;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0.5rem;
+        max-width: 1400px;
+        max-height: 1400px;
+        margin: 2rem auto;
+        @include goFlex(column, center, center, wrap);
+        nav{
+            width: 100% !important;
+            @include bg();
+            border-radius: 6px;
+
+            a{
+                color: azure !important;
+                border: 2px solid wheat;
+                padding: 2px;
+                margin: 2px;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: transform 0.2s ease; /* Smooth animation */
+                
+            &:hover {
+                transform: scale(1.2); /* Scale up by 20% */
+                &:active {
+                background-color: #8a6d6d;
+                }
+            }
+        }
+        
+        
+    }
+    .largediv{
+        @include goFlex(space-between, wrap);
+        .photos{
+            @include goFlex(center, center);
+            width: 50%;
+            :first-child{
+                background-image: url(../imgs/5.jpg);
+                @include child-image();
+                height: 320px;
+                width: 700px;
+                margin-top: 30px !important;
+            }
+            :last-child{
+                background-image: url(../imgs/6.jpg);
+                @include child-image();
+                height: 310px;
+                width: 700px;
+                margin-top: 10px;
+                background-size: contain;
+            }
+    }
+    .largetxt{
+        @include goFlex(center, center);
+        width: 50%;
+        color: wheat;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+}
+}
