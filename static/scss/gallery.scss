@@ -1,0 +1,276 @@
+@import '_mixins';
+body{
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(49, 22, 22) !important;
+    .Content {
+        position: relative;
+        z-index: 1;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0.5rem;
+        max-width: 1400px;
+        height: 16000px;
+        margin: 2rem auto;
+        nav{
+            width: 100% !important;
+            @include bg();
+            border-radius: 6px;
+            a{
+                color: azure !important;
+                border: 2px solid wheat;
+                padding: 2px;
+                margin: 2px;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: transform 0.2s ease; /* Smooth animation */
+                
+            &:hover {
+                transform: scale(1.2); /* Scale up by 20% */
+                &:active {
+                background-color: #8a6d6d;
+                }
+            }
+        }
+        }
+        }
+    }
+    .card{
+        @include goFlex(space-around, space-around, nowrap);
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .image1 {
+        background-image: url(../imgs/txa.jpg);
+        @include child-image();
+    }
+    .image2 {
+        background-image: url(../imgs/tetrigori.jpg);
+        @include child-image();
+    }
+    .image3 {
+        background-image: url(../imgs/tavadiyanwit.jpg);
+        @include child-image();
+    }
+    .image4 {
+        background-image: url(../imgs/shesha.jpg);
+        @include child-image();
+    }
+    .image5 {
+        background-image: url(../imgs/shavilomi.jpg);
+        @include child-image();
+    }
+    .image6 {
+        background-image: url(../imgs/samitavadi.jpg);
+        @include child-image();
+    }
+    .image7 {
+        background-image: url(../imgs/qeipi.jpg);
+        @include child-image();
+    }
+    .image8 {
+        background-image: url(../imgs/purislewva.png);
+        @include child-image();
+    }
+    .image9 {
+        background-image: url(../imgs/ortawala.jpg);
+        @include child-image();
+    }
+    .image10 {
+        background-image: url(../imgs/monadire.jpg);
+        @include child-image();
+    }
+    .image11 {
+        background-image: url(../imgs/metevzeklde.jpg);
+        @include child-image();
+    }
+    .image12 {
+        background-image: url(../imgs/metevze.jpg);
+        @include child-image();
+    }
+    .image13 {
+        background-image: url(../imgs/meezove.jpg);
+        @include child-image();
+    }
+    .image14 {
+        background-image: url(../imgs/margarita.jpg);
+        @include child-image();
+    }
+    .image15 {
+        background-image: url(../imgs/iremi.jpg);
+        @include child-image
+    }
+
+    .image16 {
+        background-image: url(../imgs/ilia.jpg);
+        @include child-image();
+    }
+    .image17 {
+        background-image: url(../imgs/eqimi.jpg);
+        @include child-image();
+    }
+    .image18 {
+        background-image: url(../imgs/cxenimoipara.jpg);
+        @include child-image
+    }
+    .image19 {
+        background-image: url(../imgs/Arsenal.jpg);
+        @include child-image
+    }
+    .image20 {
+        background-image: url(../imgs/aqlemi.jpg);
+        @include child-image
+    }
+    .image21 {
+        background-image: url(../imgs/2.jpg);
+        @include child-image
+    }
+    .card1 {
+        width: 599px ;
+        height: 466px !important;/* Set desired width */
+    }
+    .card2 {
+        height: 957px !important; /* Set desired height */
+        width: 1200px;  /* Set desired width */
+    }
+    .card3 {
+        height: 700px !important; /* Set desired height */
+        width: 560px;  /* Set desired width */
+    }
+    .card4 {
+        height: 700px !important; /* Set desired height */
+        width: 560px;  /* Set desired width */
+    }
+    .card5 {
+        height: 600px !important; /* Set desired height */
+        width: 850px;  /* Set desired width */
+    }
+    .card6 {
+        height: 479px !important; /* Set desired height */
+        width: 550px;  /* Set desired width */
+    }
+    .card7 {
+        height: 597px !important; /* Set desired height */
+        width: 813px;  /* Set desired width */
+    }
+    .card8 {
+        height: 500px !important; /* Set desired height */
+        width: 800px;  /* Set desired width */
+    }
+    .card9 {
+        height: 400px !important; /* Set desired height */
+        width: 800px;  /* Set desired width */
+    }
+    .card10 {
+        height: 873px !important; /* Set desired height */
+        width: 702px;  /* Set desired width */
+    }
+    .card11 {
+        height: 700px !important; /* Set desired height */
+        width: 500px;  /* Set desired width */
+    }
+    .card12 {
+        height: 700px !important; /* Set desired height */
+        width: 624px;  /* Set desired width */
+    }
+    .card13 {
+        height: 700px !important; /* Set desired height */
+        width: 350px;  /* Set desired width */
+    }
+    .card14 {
+        height: 700px !important; /* Set desired height */
+        width: 600px;  /* Set desired width */
+    }
+    .card15 {
+        height: 700px !important; /* Set desired height */
+        width: 500px;  /* Set desired width */
+    }
+    .card16 {
+        height: 700px !important; /* Set desired height */
+        width: 623px;  /* Set desired width */
+    }
+    .card17 {
+        height: 750px !important; /* Set desired height */
+        width: 1000px;  /* Set desired width */
+    }
+    .card18 {
+        height: 900px !important; /* Set desired height */
+        width: 650px;  /* Set desired width */
+    }
+    .card19 {
+        height: 900px !important; /* Set desired height */
+        width: 650px;  /* Set desired width */
+    }
+    .card20 {
+        height: 742px !important; /* Set desired height */
+        width: 940px;  /* Set desired width */
+    }
+    .card21 {
+        height: 1200px !important; /* Set desired height */
+        width: 972px;  /* Set desired width */
+    }
+    .card{
+        @include goFlex(space-around, space-around);
+        :first-child{
+            height: 90% !important;
+            width: 95% !important;
+            margin-right: 20px;
+        }
+        transition: transform 2s !important;
+        :hover {
+            transform: scale(1.1) !important; /* Scale image on hover */
+        } /* Smooth transition */
+        background-color: transparent !important;
+        color: wheat !important;
+    }
+    @media (max-width: 1300px) {
+        body .Content {
+          padding: 1.5rem;
+          max-width: 95%;
+          height: auto;
+        }
+      
+      
+        .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10,
+        .card11, .card12, .card13, .card14, .card15, .card16, .card17, .card18, .card19,
+        .card20, .card21 {
+          width: 80% !important; /* Take up 48% of the width for 2-column layout */
+          height: 80% !important;
+          margin-bottom: 1rem;
+        }
+      
+        .card :first-child {
+          height: 100% !important;
+          width: 100% !important;
+          margin-right: 0;
+        }
+      }
+    @media (max-width: 1024px) {
+        body .Content {
+          padding: 1rem;
+          max-width: 100%;
+          height: auto;
+        }
+      
+        .card {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10,
+        .card11, .card12, .card13, .card14, .card15, .card16, .card17, .card18, .card19,
+        .card20, .card21 {
+          width: 90%;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+      
+        .card :first-child {
+          height: auto !important;
+          width: 100% !important;
+          margin-right: 0;
+        }
+      }
